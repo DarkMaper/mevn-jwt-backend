@@ -15,6 +15,7 @@
             {
                 "allowSingleExtends": true
             }
-        ]
+        ],
+        "linebreak-style": ["error", "windows"]
     }
 }
