@@ -1,11 +1,10 @@
-import { Document, Model, Types } from 'mongoose';
+import { Document, Model } from 'mongoose';
 
 interface IRefreshTokenDocument extends Document {
-	userId: Types.ObjectId;
+	userId: string;
 	refreshToken: string;
 	ip: string;
 	browser: string;
-	country: string;
 }
 
 export interface IRefreshToken extends IRefreshTokenDocument {}
