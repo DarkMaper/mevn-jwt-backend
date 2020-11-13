@@ -1,11 +1,11 @@
-import { Document, Model, Types } from 'mongoose';
+import { Document, Model } from 'mongoose';
 interface IUserDocument extends Document {
 	_id: string;
 	username: string;
 	email: string;
 	name: string;
 	password: string;
-	role: Types.ObjectId[];
+	role?: string[];
 	verification: string;
 	verified: boolean;
 	verificationExpires: Date;
